@@ -1,0 +1,62 @@
+{{#if addNewQuestion}}
+  <form class="newQuestionForm">
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="author">Name</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=author id="author"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="avatar">Profile Pic Url</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=avatar id="avatar"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="date">Date</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=date id="date"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="question">Profile Pic Url</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{textarea class="ten columns" value=question id="question"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    {{input type="hidden" value=false id="complete"}}<br>
+    <span class="one columns">&nbsp;</span>
+    <button {{action 'save1'}}>Save</button>
+
+  </form>
+{{else}}
+  <div class="row">
+    <span class="nine columns">&nbsp;</span>
+    <button {{action 'questionFormShow'}} class="newButton two columns">New</button>
+  </div>
+{{/if}}
