@@ -6,7 +6,6 @@ export default Model.extend({
   author: attr(),
   avatar: attr(),
   date: attr(),
-  // attr('date', { defaultValue() { return new Date(); } }),
   content: attr(),
   question: belongsTo('question', {async: true})
 });

@@ -1,0 +1,22 @@
+{{#if addNewAnswer}}
+  <form class="newAnswerForm">
+    <label for="author">Name</label>
+    {{input value=author id="author"}}
+
+    <label for="avatar">Profile Pic Url</label>
+    {{input value=avatar id="avatar"}}
+
+    <label for="date">Date</label>
+    {{input value=date id="date"}}
+
+    <label for="content">Answer:</label>
+    {{textarea value=content id="content"}}
+    <button {{action 'saveAnswer' answer}}>Save</button>
+
+  </form>
+{{else}}
+  <div class="row">
+    <span class="nine columns">&nbsp;</span>
+    <button {{action 'answerFormShow'}} class="newButton two columns">New</button>
+  </div>
+{{/if}}

@@ -1,1 +1,5 @@
-{{yield}}
+<p><strong>Answers:</strong></p>
+{{#each model as |answer|}}
+  <p>Reply from: {{answer.author}}</p>
+  <p>{{answer.content}}</p>
+{{/each}}
