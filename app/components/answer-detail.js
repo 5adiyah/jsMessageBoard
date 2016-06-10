@@ -2,8 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    save1(params){
-      this.sendAction('save1', params);
+    saveAnswer(params){
+      this.sendAction('saveAnswer', params);
+    }
+
+    deleteAnswer(answer){
+      if(confirm("You sure you want to delete this answer?")){
+        this.sendAction('destroyAnswer', answer);
+      }
     }
   }
 });

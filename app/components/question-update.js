@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('updateQuestionForm', true);
     },
 
-    update(question){
+    updateQuestion(question){
       var params = {
         author: this.get('author'),
         avatar: this.get('avatar'),
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       };
 
       this.set('updateQuestionForm', false);
-      this.sendAction('update', question, params);
+      this.sendAction('updateQuestion', question, params);
     }
   }
 });

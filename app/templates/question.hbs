@@ -1,8 +1,6 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
-{{question-update question=model update="update"}}
+{{question-update question=model updateQuestion="updateQuestion"}}
 
-{{#link-to 'index'}}<button>Back</button>{{/link-to}}
 <hr>
 
-<p>Answers:</p>
-{{answer-new answer=answer model=model saveAnswer="saveAnswer"}}
+{{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}

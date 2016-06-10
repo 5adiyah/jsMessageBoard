@@ -1,61 +1,21 @@
 {{#if addNewQuestion}}
   <form class="newQuestionForm">
+      <label for="author">Name</label>
+      {{input value=author id="author"}}
 
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      <label class="ten columns" for="author">Name</label>
-      <span class="one columns">&nbsp;</span>
-    </div>
+      <label for="avatar">Profile Pic Url</label>
+      {{input value=avatar id="avatar"}}
 
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      {{input class="ten columns" value=author id="author"}}
-      <span class="one columns">&nbsp;</span>
-    </div>
+      <label for="date">Date</label>
+      {{input value=date id="date"}}
 
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      <label class="ten columns" for="avatar">Profile Pic Url</label>
-      <span class="one columns">&nbsp;</span>
-    </div>
-
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      {{input class="ten columns" value=avatar id="avatar"}}
-      <span class="one columns">&nbsp;</span>
-    </div>
-
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      <label class="ten columns" for="date">Date</label>
-      <span class="one columns">&nbsp;</span>
-    </div>
-
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      {{input class="ten columns" value=date id="date"}}
-      <span class="one columns">&nbsp;</span>
-    </div>
-
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
-      <label class="ten columns" for="content">Question:</label>
-      <span class="one columns">&nbsp;</span>
-    </div>
-
-    <div class="row">
-      <span class="one columns">&nbsp;</span>
+      <label for="content">Question:</label>
       {{textarea class="ten columns" value=content id="content"}}
-      <span class="one columns">&nbsp;</span>
-    </div>
 
     <span class="one columns">&nbsp;</span>
-    <button {{action 'save1'}}>Save</button>
+    <button {{action 'saveQuestion'}}>Save</button>
 
   </form>
 {{else}}
-  <div class="row">
-    <span class="nine columns">&nbsp;</span>
-    <button {{action 'questionFormShow'}} class="newButton two columns">New</button>
-  </div>
+    <button {{action 'questionFormShow'}}>New</button>
 {{/if}}

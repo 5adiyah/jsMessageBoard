@@ -12,8 +12,8 @@
     <label for="content">Question:</label>
     {{textarea value=content id="content" placeholder=question.content}} <br>
 
-    <button {{action 'update' question}}>Save</button>
+    <button {{action 'updateQuestion' question}}>Save</button>
   </form>
 {{else}}
-    <button {{action 'updateQuestionForm'}} class="two columns">Edit Q</button>
+    <button {{action 'updateQuestionForm'}}>Edit Q</button>
 {{/if}}
