@@ -44,3 +44,26 @@ body{
   color: #356164;
   margin-top: 10px;
 }
+
+.questionList{
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.content {
+  text-align: left;
+  border: 2px solid #356164;
+  border-right: 2px solid #356164;
+  padding: 5px;
+  padding-top: 5px;
+}
+
+.author {
+  margin: 15px 0 0 20px;
+  text-align: left;
+}
