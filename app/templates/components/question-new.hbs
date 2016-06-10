@@ -39,17 +39,16 @@
 
     <div class="row">
       <span class="one columns">&nbsp;</span>
-      <label class="ten columns" for="question">Question:</label>
+      <label class="ten columns" for="content">Question:</label>
       <span class="one columns">&nbsp;</span>
     </div>
 
     <div class="row">
       <span class="one columns">&nbsp;</span>
-      {{textarea class="ten columns" value=question id="question"}}
+      {{textarea class="ten columns" value=content id="content"}}
       <span class="one columns">&nbsp;</span>
     </div>
 
-    {{input type="hidden" value=false id="complete"}}<br>
     <span class="one columns">&nbsp;</span>
     <button {{action 'save1'}}>Save</button>
 

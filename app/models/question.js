@@ -7,5 +7,5 @@ export default Model.extend({
   avatar: attr(),
   date: attr(),
   // attr('date', { defaultValue() { return new Date(); } }),
-  question: attr(),
+  content: attr(),
 });
