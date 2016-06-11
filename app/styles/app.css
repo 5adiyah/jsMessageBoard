@@ -85,6 +85,14 @@ body{
   background-color: #fff;
 }
 
+.newAnswerForm{
+  margin-left: 250px;
+}
+
+.newAnswerForm label{
+  font-size: 0.5em;
+}
+
 .updateForm{
   margin-left: 150px;
 }
@@ -122,6 +130,12 @@ body{
   margin-top: 7px;
 }
 
+.linkDiv2 i{
+  font-size: 2em;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
 .coltwo{
   font-size: 2em;
 }
@@ -133,4 +147,14 @@ body{
 
 .questionDetail{
   margin-top: 70px;
+}
+
+.answerDetail{
+  padding-bottom: 70px;
+}
+
+.addNewAnswer{
+  margin-top: 20px;
+  margin-left: 430px;
+  font-size: 2em;
 }

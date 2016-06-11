@@ -1,8 +1,21 @@
-<p><strong>Answers:</strong></p>
-{{answer-new question=model saveAnswer="saveAnswer"}}
+<h3 class="header" >Answers</h3>
 
-{{#each model.answers as |answer|}}
-  <p>Reply from: {{answer.author}}</p>
-  <p>{{answer.content}}</p>
-  <button type="button" {{action 'deleteAnswer' answer}}>Delete</button>
-{{/each}}
+    {{#each model.answers as |answer|}}
+    <div class="answerItem row">
+      <div class="avatarDiv two columns">
+        <img src={{answer.avatar}}>
+      </div>
+      <div class="contentDiv eight columns">
+        <p><strong>{{answer.content}}</strong></p>
+      </div>
+
+      <div class="linkDiv2 two columns">
+        <i {{action 'deleteAnswer' answer}} class="fa fa-trash-o" aria-hidden="true"></i>
+      </div>
+    </div>
+    {{/each}}
+
+
+  <div class="addNewAnswer">
+    {{answer-new question=model saveAnswer="saveAnswer"}}
+  </div>

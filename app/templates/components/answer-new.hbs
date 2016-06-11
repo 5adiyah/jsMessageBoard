@@ -3,7 +3,7 @@
     <label for="author">Name</label>
     {{input value=author id="author"}}
 
-    <label for="avatar">Profile Pic Url</label>
+    <label for="avatar">Avatar</label>
     {{input value=avatar id="avatar"}}
 
     <label for="date">Date</label>
@@ -16,7 +16,6 @@
   </form>
 {{else}}
   <div class="row">
-    <span class="nine columns">&nbsp;</span>
-    <button {{action 'answerFormShow'}} class="newButton two columns">New</button>
+    <i {{action 'answerFormShow'}} class="fa fa-reply" aria-hidden="true"></i>
   </div>
 {{/if}}

@@ -1,7 +1,7 @@
 <div class="whitebox">
   <div class="row nav">
     <div class="questions eight columns">
-      {{#link-to 'index'}}<p>ANSWERS</p>{{/link-to}}
+      <p>ANSWERS</p>
     </div>
     <div class="back four columns">
       {{#link-to 'index'}}<p>BACK</p>{{/link-to}}
@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="questionDetail container">
+  <div class="answerDetail container">
       {{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
   </div>
 
