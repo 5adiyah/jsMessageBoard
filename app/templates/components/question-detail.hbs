@@ -1,5 +1,12 @@
-<h2><strong>{{question.content}}</strong></h2>
-<p>Asked by: {{question.author}}</p>
-<img src={{question.avatar}} width="200px" /><br>
+<div class="questionItem row">
+  <div class="avatarDiv two columns">
+    <img src={{question.avatar}}>
+  </div>
+  <div class="contentDiv nine columns">
+    <p><strong>{{question.content}}</strong></p>
+  </div>
 
- <button {{action 'delete' question}}>Delete</button>
+  <div class="linkDiv one columns">
+    <i {{action 'delete' question}} class="fa fa-trash-o" aria-hidden="true"></i>
+  </div>
+</div>

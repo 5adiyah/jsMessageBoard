@@ -1,6 +1,34 @@
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+<div class="whitebox">
+  <div class="row nav">
+    <div class="questions eight columns">
+      {{#link-to 'index'}}<p>ANSWERS</p>{{/link-to}}
+    </div>
+    <div class="back four columns">
+      {{#link-to 'index'}}<p>BACK</p>{{/link-to}}
+    </div>
+  </div>
+
+  <div class="questionDetail container">
+    <div class="row">
+      <div class="colone eleven columns">
+        {{question-detail question=model destroyQuestion="destroyQuestion"}}
+      </div>
+      <div class="coltwo one columns">
+        {{question-update question=model updateQuestion="updateQuestion"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="questionDetail container">
+      {{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
+  </div>
+
+
+</div>
+
+<!-- {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{question-update question=model updateQuestion="updateQuestion"}}
 
 <hr>
 
-{{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
+{{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}} -->

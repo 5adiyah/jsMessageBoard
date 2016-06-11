@@ -8,20 +8,22 @@
     </div>
   </div>
 
-
+  <div class="questionTile container">
+    {{#each model.questions as |question|}}
+      {{question-tile question=question updateQuestion="updateQuestion" destroyQuestion="destroyQuestion"}}
+    {{/each}}
+  </div>
 
 </div>
 
 
-<ul>
+<!-- <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question updateQuestion="updateQuestion" destroyQuestion="destroyQuestion"}}
   {{/each}}
-</ul>
+</ul> -->
 
 
-
-<hr>
 
 <!-- <ul>
   {{#each model.answers as |answer|}}

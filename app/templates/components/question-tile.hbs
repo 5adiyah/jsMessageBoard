@@ -1,1 +1,14 @@
-<p>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</p>
+<!-- <p>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</p> -->
+
+<div class="questionItem row">
+  <div class="avatarDiv two columns">
+    <img src={{question.avatar}}>
+  </div>
+  <div class="contentDiv nine columns">
+    <p><strong>{{question.content}}</strong></p>
+  </div>
+
+  <div class="linkDiv one columns">
+    {{#link-to 'question' question.id}}<p class="hide">{{question.content}}</p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>{{/link-to}}
+  </div>
+</div>

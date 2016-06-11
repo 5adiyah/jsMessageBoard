@@ -1,9 +1,9 @@
 {{#if updateQuestionForm}}
-  <form>
+  <form class="updateForm">
     <label for="author">Name</label>
     {{input value=author id="author" placeholder=question.author}} <br>
 
-    <label for="avatar">Profile Pic Url</label>
+    <label for="avatar">Avatar</label>
     {{input value=avatar id="avatar" placeholder=question.avatar}} <br>
 
     <label for="date">Date</label>
@@ -15,5 +15,5 @@
     <button {{action 'updateQuestion' question}}>Save</button>
   </form>
 {{else}}
-    <button {{action 'updateQuestionForm'}}>Edit Q</button>
+    <i {{action 'updateQuestionForm'}} class="fa fa-pencil-square-o" aria-hidden="true"></i>
 {{/if}}
