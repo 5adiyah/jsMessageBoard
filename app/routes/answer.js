@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(parms){
+  model(params){
     return this.store.findRecord('answer', params.answer_id);
-  }
+  },
 
   actions: {
     destroyAnswer(answer) {
