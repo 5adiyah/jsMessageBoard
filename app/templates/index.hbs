@@ -1,10 +1,23 @@
+<div class="whitebox">
+  <div class="row nav">
+    <div class="questions eight columns">
+      {{#link-to 'index'}}<p>QUESTIONS</p>{{/link-to}}
+    </div>
+    <div class="new four columns">
+      {{question-new saveQuestion="saveQuestion"}}
+    </div>
+  </div>
+
+
+
+</div>
+
+
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question updateQuestion="updateQuestion" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
-
-{{question-new saveQuestion="saveQuestion"}}
 
 
 

@@ -8,62 +8,57 @@ body{
 
 
 .whitebox{
-  width: 90%;
+  width: 50%;
   height: 1000px;
-  background-color: #eee;
+  background-color: #fff;
   margin: 50px auto;
 }
 
 .nav{
   width: 100%;
-  height: 100px;
-  background-color: #356164;
+  height: 70px;
+  background-color: #32859D;
 }
 
-.textbox{
-  background-color: #fff;
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
-  padding-top: 20px;
-  height: 50%;
-}
-
-.search {
+.questions{
+  height: 70px;
+  background-color: #FCA44B;
+  line-height: 70px;
   text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-family: serif;
+  letter-spacing: 15px;
 }
 
-.search input{
-  border-top: #fff;
-  border-left: #fff;
-  border-right: #fff;
-  border-radius: 0;
-}
-
-.search i {
-  color: #356164;
-  margin-top: 10px;
-}
-
-.questionList{
-  text-align: center;
+.newQ{
   margin-top: 15px;
-  margin-left: 100px;
+  margin-left: 30px;
+  font-size: 2em;
+  font-family: serif;
+  letter-spacing: 15px;
+  font-weight: lighter;
+  color: #fff;
+  border: 1px #32859D solid;
+  text-decoration: none;
 }
 
-.rating {
-  margin-top: 20px;
+.newQ:hover{
+  border: 1px #32859D solid;
+  color: #FCA44B;
 }
 
-.content {
-  text-align: left;
-  border: 2px solid #356164;
-  border-right: 2px solid #356164;
-  padding: 5px;
-  padding-top: 5px;
+.questions a{
+  text-decoration: none;
+  color: #fff;
 }
 
-.author {
-  margin: 15px 0 0 20px;
-  text-align: left;
+.questions a:hover{
+  text-decoration: none;
+  color: #32859D;
+}
+
+.newQuestionForm{
+  margin-left: 250px;
+  background-color: #fff;
 }

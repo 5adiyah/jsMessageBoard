@@ -3,19 +3,19 @@
       <label for="author">Name</label>
       {{input value=author id="author"}}
 
-      <label for="avatar">Profile Pic Url</label>
+      <label for="avatar">Avatar</label>
       {{input value=avatar id="avatar"}}
 
       <label for="date">Date</label>
       {{input value=date id="date"}}
 
       <label for="content">Question:</label>
-      {{textarea class="ten columns" value=content id="content"}}
+      <p>{{textarea value=content id="content"}}</p>
 
-    <span class="one columns">&nbsp;</span>
+
     <button {{action 'saveQuestion'}}>Save</button>
 
   </form>
 {{else}}
-    <button {{action 'questionFormShow'}}>New</button>
+    <button class="newQ" {{action 'questionFormShow'}}>New</button>
 {{/if}}
