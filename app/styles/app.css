@@ -163,3 +163,8 @@ body{
   margin-left: 430px;
   font-size: 2em;
 }
+
+.voteNum {
+  font-size: 7pt;
+  font-weight: bold;
+}
