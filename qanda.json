@@ -2,27 +2,36 @@
     "author": "Tomster",
     "avatar": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
     "date": "01/20/19",
+    "score": 0,
     "content": "What am i doing here?"
   }, {
     "author": "Dino",
     "avatar": "http://www.clker.com/cliparts/P/4/n/M/c/f/orange-dinosaur-md.png",
     "date": "03/02/11",
+    "score": 0,
     "content": "Where have all the dinos gone?"
   }, {
     "author": "ChickFilA",
     "avatar": "http://www.clker.com/cliparts/Q/7/U/E/h/1/white-chicken-hi.png",
     "date": "07/20/10",
+    "score": 0,
     "content": "Why did the chicken cross the road?"
+  }, {
+    "author": "Pixel",
+    "avatar": "http://images.clipartpanda.com/cute-cat-clipart-cat_3_orange.png",
+    "date": "01/03/2018",
+    "score": 0,
+    "content": "Where can I find a human free area to nap?"
   }],
 
   "answers": [{
-    "author": "Tomster",
-    "avatar": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
+    "author": "ChickFilA",
+    "avatar": "http://www.clker.com/cliparts/Q/7/U/E/h/1/white-chicken-hi.png",
     "date": "01/20/91",
     "content": "I don't know man.."
   }, {
-    "author": "ChickFilA",
-    "avatar": "http://www.clker.com/cliparts/Q/7/U/E/h/1/white-chicken-hi.png",
+    "author": "Tomster",
+    "avatar": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
     "date": "06/20/15",
     "content": "They all died"
   }, {
@@ -30,5 +39,10 @@
     "avatar": "http://www.clker.com/cliparts/P/4/n/M/c/f/orange-dinosaur-md.png",
     "date": "06/20/15",
     "content": "Why do you keep asking that?"
+  }, {
+    "author": "ChickFilA",
+    "avatar": "http://www.clker.com/cliparts/Q/7/U/E/h/1/white-chicken-hi.png",
+    "date": "07/02/15",
+    "content": "The world is full of humans, good luck finding a spot without one."
   }]
 }

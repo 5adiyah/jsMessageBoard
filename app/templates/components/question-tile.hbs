@@ -2,8 +2,8 @@
 
 <div class="questionItem row">
   <div class="voteDiv two columns">
-    <i class="fa fa-chevron-up" aria-hidden="true"></i><br>
-    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    <i {{action "upVote" question}} class="fa fa-chevron-up" aria-hidden="true"></i><br>
+    <i {{action "downVote" question}} class="fa fa-chevron-down" aria-hidden="true"></i>
   </div>
   <div class="avatarDiv two columns">
     <img src={{question.avatar}}>

@@ -6,6 +6,7 @@ export default Model.extend({
   author: attr(),
   avatar: attr(),
   date: attr(),
+  score: attr(),
   content: attr(),
   answers: hasMany('answer', {async: true})
 });

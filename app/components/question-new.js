@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         avatar: this.get('avatar'),
         date: this.get('date'),
+        score: 0,
         content: this.get('content'),
       };
       this.set('addNewQuestion', false);
