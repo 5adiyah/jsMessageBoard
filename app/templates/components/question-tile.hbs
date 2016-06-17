@@ -9,8 +9,9 @@
     <img src={{question.avatar}}>
   </div>
   <div class="contentDiv seven columns">
-    <p><strong>{{question.content}}</strong> <span class="voteNum">(Score: {{question.score}})</span></p>
+    <p><strong>{{question.content}}</strong> <span class="voteNum">(Score: {{question.score}} | Answers: {{answerCount question}})</span></p>
   </div>
+
 
   <div class="linkDiv one columns">
     {{#link-to 'question' question.id}}<p class="hide">{{question.content}}</p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>{{/link-to}}
