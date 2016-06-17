@@ -136,6 +136,11 @@ body{
   margin-left: 5px;
 }
 
+.voteDiv i {
+  font-size: 1.2em;
+  margin-top: 3px;
+}
+
 .coltwo{
   font-size: 2em;
 }
