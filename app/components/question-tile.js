@@ -8,11 +8,21 @@ export default Ember.Component.extend({
   // })
   actions: {
     upVote(question){
-      console.log("Question in question-tile: " + question.get('content'));
+      console.log("________________________");
       console.log("Question score question-tile: " + question.get('score'));
       var score = question.get('score') + 1;
       console.log("score in question-tile: " + score);
       this.sendAction('upVote', question, score)
-    }
+    },
+
+    downVote(question){
+      console.log("________________________");
+      console.log("Question score question-tile: " + question.get('score'));
+      var score = question.get('score') - 1;
+      console.log("score in question-tile: " + score);
+      this.sendAction('upVote', question, score)
+    },
+
+
   }
 });

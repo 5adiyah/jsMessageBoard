@@ -10,7 +10,7 @@
 
   <div class="questionTile container">
     {{#each model.questions as |question|}}
-      {{question-tile question=question updateQuestion="updateQuestion" destroyQuestion="destroyQuestion" upVote="upVote"}}
+      {{question-tile question=question updateQuestion="updateQuestion" destroyQuestion="destroyQuestion" upVote="upVote" downVote="downVote"}}
     {{/each}}
   </div>
 
