@@ -115,11 +115,27 @@ body{
   border-bottom: 2px solid #eee;
 }
 
+.date{
+  margin-top: 8px;
+  margin-bottom: -2px;
+  font-size: 10pt;
+}
+
 .contentDiv{
   margin-top: 10px;
 }
 
+.answerDiv{
+  margin-top: -5px;
+}
+
 .avatarDiv img{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.animalAvatarDiv img{
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -167,4 +183,8 @@ body{
 .voteNum {
   font-size: 7pt;
   font-weight: bold;
+}
+
+.answerItem{
+  margin-bottom: 15px;
 }

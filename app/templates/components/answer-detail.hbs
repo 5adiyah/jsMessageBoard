@@ -1,21 +1,16 @@
-<h3 class="header" >Answers:</h3>
-
-model.question: {{model.question}} <br>
-model.questions: {{model.questions}}<br>
-question: {{question}}<br>
-questions: {{questions}}<br>
-
+<h3 class="header" >{{numAnswers}} Answers:</h3>
 
     {{#each model.answers as |answer|}}
     <div class="answerItem row">
-      <div class="avatarDiv two columns">
+      <div class="animalAvatarDiv two columns">
         <img src={{answer.avatar}}>
       </div>
-      <div class="contentDiv eight columns">
+      <div class="answerDiv eight columns">
+        <p class="date">{{answer.date}}</p>
         <p><strong>{{answer.content}}</strong></p>
       </div>
 
-      <div class="linkDiv2 two columns">
+      <div class="linkDiv2 two columns answerTrash">
         <i {{action 'deleteAnswer' answer}} class="fa fa-trash-o" aria-hidden="true"></i>
       </div>
     </div>
