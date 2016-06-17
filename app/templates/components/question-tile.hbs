@@ -1,5 +1,3 @@
-<!-- <p>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</p> -->
-
 <div class="questionItem row">
   <div class="voteDiv two columns">
     <i {{action "upVote" question}} class="fa fa-chevron-up" aria-hidden="true"></i><br>
@@ -15,5 +13,6 @@
 
   <div class="linkDiv one columns">
     {{#link-to 'question' question.id}}<p class="hide">{{question.content}}</p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>{{/link-to}}
+    <p class="hide">{{question.content}}</p><i class="fa fa-heart" aria-hidden="true"></i>
   </div>
 </div>

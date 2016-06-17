@@ -15,7 +15,5 @@ export default Ember.Component.extend({
       var score = question.get('score') - 1;
       this.sendAction('upVote', question, score)
     },
-
-
   }
 });
