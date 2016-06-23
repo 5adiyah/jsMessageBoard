@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoritesCart: Ember.inject.service(),
 
   actions: {
     upVote(question){
@@ -14,6 +15,10 @@ export default Ember.Component.extend({
     downVote(question){
       var score = question.get('score') - 1;
       this.sendAction('upVote', question, score)
+    },
+
+    addToCart(question) {
+      this.get('favoritesCart').add(question);
     },
   }
 });

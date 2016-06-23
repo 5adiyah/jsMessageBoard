@@ -13,6 +13,6 @@
 
   <div class="linkDiv one columns">
     {{#link-to 'question' question.id}}<p class="hide">{{question.content}}</p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>{{/link-to}}
-    <p class="hide">{{question.content}}</p><i class="fa fa-heart" aria-hidden="true"></i>
+    <p class="hide">{{question.content}}</p><i {{action "addToCart" question}} class="fa fa-heart" aria-hidden="true"></i>
   </div>
 </div>

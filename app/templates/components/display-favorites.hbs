@@ -1,0 +1,10 @@
+<div class="questionItem row">
+  <div class="voteDiv two columns">
+    <i id="fav" {{action "addToCart" question}} class="fa fa-heart" aria-hidden="true"></i>
+  </div>
+  <div class="contentDiv ten columns">
+    {{#each favoritesCart.questions as |question|}}
+      <p><strong>{{question.content}}</strong></p>
+    {{/each}}
+  </div>
+</div>

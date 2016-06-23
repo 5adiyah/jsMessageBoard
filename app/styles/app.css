@@ -20,6 +20,13 @@ body{
   background-color: #32859D;
 }
 
+.nav2{
+  margin-top: -10px;
+  width: 100%;
+  height: 70px;
+  background-color: #32859D;
+}
+
 .questions{
   height: 70px;
   background-color: #FCA44B;
@@ -109,6 +116,14 @@ body{
   margin-top: 70px;
 }
 
+.favTile{
+  margin-top: 20px;
+}
+
+.voteDiv i .fav{
+  margin-top: 100px;
+}
+
 .questionItem{
   margin-bottom: 50px;
   padding-bottom: 50px;
@@ -196,4 +211,9 @@ body{
 
 .answerItem{
   margin-bottom: 15px;
+}
+
+#fav{
+  margin-top: 16px;
+  margin-left: 30px;
 }
